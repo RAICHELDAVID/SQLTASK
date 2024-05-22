@@ -1,0 +1,15 @@
+10. From the following table, write a SQL query to find those employees who joined before
+1991. Return complete information about the employees.
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT emp_id,emp_name,job_name,ISNULL(CAST((manager_id) AS VARCHAR(15)),'') AS manager_id,
+hire_date,salary,ISNULL(CAST((commission) AS VARCHAR(15)),'') AS commission,dep_id FROM employees 
+WHERE YEAR(hire_date)<1991;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+emp_id	emp_name	job_name	manager_id	hire_date	salary	commission	dep_id
+63679	SANDRINE	CLERK	    69062	    1990-12-18	900.00		        2001

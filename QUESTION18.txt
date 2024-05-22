@@ -1,0 +1,13 @@
+18. From the following table, write a SQL query to find the highest salary. Return the
+highest salary.
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT MAX(salary) AS max FROM employees;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+max
+6000.00

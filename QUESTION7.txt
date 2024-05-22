@@ -1,0 +1,26 @@
+7. From the following table, write a SQL query to count the number of characters except
+the spaces for each employee name. Return employee name length.
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT emp_name,LEN(emp_name) AS length FROM employees;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+emp_name	length
+SANDRINE	8
+ADELYN	    6
+WADE	    4
+JONAS	    5
+MADDEN	    6
+BLAZE	    5
+CLARE	    5
+SCARLET	    7
+KAYLING	    7
+TUCKER	    6
+ADNRES	    6
+JULIUS	    6
+FRANK	    5
+MARKER	    6

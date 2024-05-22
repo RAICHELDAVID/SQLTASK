@@ -1,0 +1,26 @@
+5. From the following table, write a SQL query to list the employee's name and job name as
+a format of "Employee & Job".
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT CONCAT(emp_name,'   ',job_name) AS 'Employee & Job' FROM employees;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+Employee & Job
+SANDRINE   CLERK
+ADELYN   SALESMAN
+WADE   SALESMAN
+JONAS   MANAGER
+MADDEN   SALESMAN
+BLAZE   MANAGER
+CLARE   MANAGER
+SCARLET   ANALYST
+KAYLING   PRESIDENT
+TUCKER   SALESMAN
+ADNRES   CLERK
+JULIUS   CLERK
+FRANK   ANALYST
+MARKER   CLERK
