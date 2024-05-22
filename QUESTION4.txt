@@ -1,0 +1,26 @@
+4. From the following table, write a SQL query to list the employees’ names, increase their
+salary by 15%, and express the number of Dollars.
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT emp_name,'$ '+ CAST((floor(salary+salary*15/100)) AS VARCHAR(15)) AS salary FROM employees;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+emp_name	salary
+SANDRINE	$ 1035
+ADELYN	    $ 1955
+WADE	    $ 1552
+JONAS	    $ 3400
+MADDEN	    $ 1552
+BLAZE	    $ 3162
+CLARE	    $ 2932
+SCARLET	    $ 3565
+KAYLING	    $ 6900
+TUCKER	    $ 1840
+ADNRES	    $ 1380
+JULIUS	    $ 1207
+FRANK	    $ 3565
+MARKER	    $ 1610

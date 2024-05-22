@@ -1,0 +1,14 @@
+16. From the following table, write a SQL query to find the name and salary of the employee
+FRANK.
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT e.emp_name,e.salary FROM employees e,salary_grade s
+WHERE e.emp_name = 'FRANK' AND e.salary BETWEEN s.min_sal AND s.max_sal AND e.salary = s.max_sal;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+emp_name	salary
+FRANK	    3100.00
