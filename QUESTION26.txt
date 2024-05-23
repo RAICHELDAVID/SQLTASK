@@ -1,0 +1,32 @@
+26. From the above table we need to display ‘Management Level’ - labelname for
+‘President’,’Manager’,’Analyst’ jobs and ‘Employee Level’ - label name for ‘Salesman’,’Clerk’ job
+names.
+
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT emp_id,emp_name,CASE 
+WHEN job_name IN('manager','president','analyst') THEN 'MANAGEMENT LEVEL'
+WHEN job_name IN('SALESMAN','CLERK') THEN 'EMPLOYEE LEVEL'
+END AS jobPosistion
+FROM employees;
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+emp_id	emp_name	jobPosistion
+63679	SANDRINE	EMPLOYEE LEVEL
+64989	ADELYN	    EMPLOYEE LEVEL
+65271	WADE	    EMPLOYEE LEVEL
+65646	JONAS	    MANAGEMENT LEVEL
+66564	MADDEN	    EMPLOYEE LEVEL
+66928	BLAZE	    MANAGEMENT LEVEL
+67832	CLARE	    MANAGEMENT LEVEL
+67858	SCARLET	    MANAGEMENT LEVEL
+68319	KAYLING	    MANAGEMENT LEVEL
+68454	TUCKER	    EMPLOYEE LEVEL
+68736	ADNRES	    EMPLOYEE LEVEL
+69000	JULIUS	    EMPLOYEE LEVEL
+69062	FRANK	    MANAGEMENT LEVEL
+69324	MARKER	    EMPLOYEE LEVEL
