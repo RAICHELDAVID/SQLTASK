@@ -1,0 +1,24 @@
+20. From the following table, write a SQL query to find those employees who work in the
+department ID 1001 or 2001. Return employee ID, employee name, department ID,
+department location, and department name.(Using IN clause)
+
+
+<!-----------------------------------------------------------------------------------!>
+Solution
+
+SELECT emp_id,emp_name,employees.dep_id,dep_location,dep_name 
+FROM employees INNER JOIN department ON employees.dep_id=department.dep_id
+WHERE employees.dep_id IN(2001,1001);
+
+<!-----------------------------------------------------------------------------------!>
+Output
+
+emp_id	emp_name	dep_id	dep_location	dep_name
+63679	SANDRINE	2001	MELBOURNE	    AUDIT
+65646	JONAS	    2001	MELBOURNE	    AUDIT
+67832	CLARE	    1001	SYDNEY	        FINANCE
+67858	SCARLET	    2001	MELBOURNE	    AUDIT
+68319	KAYLING	    1001	SYDNEY	        FINANCE
+68736	ADNRES	    2001	MELBOURNE	    AUDIT
+69062	FRANK	    2001	MELBOURNE	    AUDIT
+69324	MARKER	    1001	SYDNEY	        FINANCE
